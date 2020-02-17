@@ -40,3 +40,6 @@ dbus was disabled in one of Project Trident updates but it is prerequisite for l
 
 ## Reboot to ensure changes take effect as expected
 16. sudo reboot
+
+## Notes:
+* User account may lose sudoer's privileges. So it is suggested to back up the sudoers configuration file from Trident located at the following path: **/usr/local/etc/sudoers.d/trident** in order to be able to restore the privileges.
