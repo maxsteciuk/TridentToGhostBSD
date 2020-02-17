@@ -5,18 +5,22 @@ Project Trident used to be a FreeBSD desktop operating system based on TrueOS as
 2. sudo beadm activate GhostBSD
 3. sudo reboot
 ## Switch package repository from Project Trident to GhostBDD
-4. Disable current Trident package repository in /etc/pkg/Train.conf:
+4. Disable current Trident package repository in the following existing file **/etc/pkg/Train.conf**:
+``
 Trident-release: {
   url: "https://pkg.project-trident.org/pkg/release",
   signature_type: "pubkey",
   pubkey: "/usr/share/keys/train-pkg.key",
   enabled: no
 }
-5. Enable latest GhostBSD package repository /etc/pkg/GhostBSD.conf
+``
+5. Enable latest GhostBSD package repository in the following newly created file **/etc/pkg/GhostBSD.conf**:
+``
 GhostBSD_PKG: {
   url: "http://pkg.us.ghostbsd.org/stable/${ABI}/latest",
   enabled: yes
 }
+``
 ## Update packages from latest GhostBSD package repository
 6. sudo pkg update
 7. sudo pkg upgrade
