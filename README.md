@@ -25,8 +25,18 @@ GhostBSD_PKG: {
 6. sudo pkg update
 7. sudo pkg upgrade
 8. sudo pkg install mate lightdm lightdm-gtk-greeter
+9. sudo pkg install -g ghostbsd
+## Clean up Lumina and Trident packages to avoid conflicts
+10. pkill PCDM
+11. sudo pkg remove trident-core lumina pcdm
+## If a machine is equipped with Nvidia graphics card the following modules need to be loaded
+12. sudo kldload nvidia-modeset 
+13. sudo kldload nvidia
 ## Enable dbus and lightdm services
 dbus was disabled in one of Project Trident updates but it is prerequisite for lightdm to work
 
-9. sudo rc-update add dbus 
-10. sudo rc-update add lightdm
+14. sudo rc-update add dbus 
+15. sudo rc-update add lightdm
+
+## Reboot to ensure changes take effect as expected
+16. sudo reboot
