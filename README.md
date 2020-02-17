@@ -26,7 +26,7 @@ GhostBSD_PKG: {
 7. sudo pkg upgrade
 8. sudo pkg install mate lightdm lightdm-gtk-greeter
 ## Enable dbus and lightdm services
-dbus was disabled after one of Project Trident updates but it is prerequisite for lightdm to work
+dbus was disabled in one of Project Trident updates but it is prerequisite for lightdm to work
 
 9. sudo rc-update add dbus 
 10. sudo rc-update add lightdm
