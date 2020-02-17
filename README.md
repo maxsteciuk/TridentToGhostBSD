@@ -30,8 +30,8 @@ GhostBSD_PKG: {
 10. pkill PCDM
 11. sudo pkg remove trident-core lumina pcdm
 ## If a machine is equipped with Nvidia graphics card the following modules need to be loaded
-12. sudo kldload nvidia-modeset 
-13. sudo kldload nvidia
+12. sudo kldload nvidia
+13. sudo kldload nvidia-modeset 
 ## Enable dbus and lightdm services
 dbus was disabled in one of Project Trident updates but it is prerequisite for lightdm to work
 
