@@ -12,6 +12,7 @@ Project Trident used to be a FreeBSD desktop operating system based on TrueOS bu
   signature_type: "pubkey",
   pubkey: "/usr/share/keys/train-pkg.key",
   enabled: no
+ ```
 5. Enable latest GhostBSD package repository in the following newly created file **/etc/pkg/GhostBSD.conf** or **/usr/local/etc/pkg/repos/GhostBSD.conf**:
 ```
 GhostBSD_PKG: {
