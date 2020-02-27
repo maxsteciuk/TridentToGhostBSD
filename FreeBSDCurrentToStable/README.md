@@ -14,5 +14,5 @@ During initial installation of Project Trident it was based on FreeBSD CURRENT b
 >> sudo reboot
 
 ## Notes:
-Because this is a major system update some packages need to be re-installed. For example, I needed to (re)install Xorg input drivers in order to fix my issue with an unresponsive keyboard and mouse.
+- Because this is a major system update some packages need to be re-installed. For example, I needed to (re)install Xorg input drivers in order to fix my issue with an unresponsive keyboard and mouse.
 >> sudo pkg install xorg-drivers
