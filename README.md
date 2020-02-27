@@ -12,7 +12,7 @@ Trident-release: {
   pubkey: "/usr/share/keys/train-pkg.key",
   enabled: no
 }
-5. Enable latest GhostBSD package repository /etc/pkg/GhostBSD.conf
+5. Enable latest GhostBSD package repository in /etc/pkg/GhostBSD.conf or /usr/local/etc/pkg/repos/GhostBSD.conf
 GhostBSD_PKG: {
   url: "http://pkg.us.ghostbsd.org/stable/${ABI}/latest",
   enabled: yes
