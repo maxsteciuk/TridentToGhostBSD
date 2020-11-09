@@ -4,7 +4,7 @@ Project Trident used to be a FreeBSD desktop operating system based on TrueOS bu
 1. sudo beadm create GhostBSD
 2. sudo beadm activate GhostBSD
 3. sudo reboot
-## Switch package repository from Project Trident to GhostBDD
+## Switch package repository from Project Trident to GhostBSD
 4. Disable current Trident package repository in the following existing file **/etc/pkg/Train.conf**:
 ```
  Trident-release: {
